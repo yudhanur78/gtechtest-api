@@ -13,6 +13,7 @@
     <properties>
         <java.version>1.8</java.version>
         <springboot.version>2.1.8.RELEASE</springboot.version>
+        <jjwt.version>0.9.1</jjwt.version>
         <mysqlconnj.version>8.0.19</mysqlconnj.version>
         <lombok.version>1.18.8</lombok.version>
     </properties>
@@ -37,6 +38,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
             <version>${springboot.version}</version>
+        </dependency>
+
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
+        <!-- JWT -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jjwt.version}</version>
         </dependency>
 
         <!-- MySQL Connector-J -->
